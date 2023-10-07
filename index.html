@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caveflix</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <script type="module" src="src/js/app.js"></script>
+</head>
+<body>
+    <section class="hero-container">
+        <header class="header">
+            <h1 class="header__logo">Caveflix</h1>
+
+            <input type="checkbox" class="header__checkbox" id="btn-menu-ham">
+            <nav class="header__nav">
+                <ul class="header__list items">
+                    <li class="header__item"><a href="#" class="header__anchor">Inicio</a></li>
+                    <li class="header__item"><a href="#" class="header__anchor">Películas</a></li>
+                    <li class="header__item items__genero">
+                        <a href="#" class="header__anchor"><span>Género</span>
+                            <img class="header__expand-icon" src="./assets/icons/expand-icon.svg" alt="expand-icon">
+                        </a>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__anchor">Series</a></li>
+                </ul>
+            </nav>
+            <label for="btn-menu-ham" class="header__menu-ham">
+                <img src="assets/icons/menu-ham.svg" alt="menu" class="header__menu-ham-icon">
+            </label>
+        </header>
+        <section class="hero movie">
+            <section class="movie__info">
+                <h2 class="movie__title">Oppenheimer (2023)</h2>
+                <p class="movie__description">Película sobre el físico J. Robert Oppenheimer y su papel como desarrollador de la bomba atómica. Basada en el libro 'American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer' de Kai Bird y Martin J. Sherwin.</p>
+                <div class="btn-section">
+                    <button class="movie__play btn">
+                        <img src="./assets/icons/play.svg" alt="play" class="btn__icon">
+                        <span class="btn__text">Reproducir</span>
+                    </button>
+
+                    <button class="movie__more-info btn">
+                        <img src="./assets/icons/info.svg" alt="info" class="btn__icon">
+                        <span class="btn__text">Más Información</span>
+                    </button>
+                </div>
+            </section>
+        </section>
+        <div class="hero-bg-dark"></div>
+        <div class="hero-bg-gradient"></div>
+    </section>
+    <main class="main">
+        <section class="popular">
+            <h2 class="popular__text">Más populares</h2>
+            <section class="popular__carrusel carrusel">
+                <div class="carrusel__left-arrow">
+                    <a href="#" class="carrusel__anchor">
+                        <img src="assets/icons/left-arrow.svg" alt="left">
+                    </a>
+                </div>
+                <div class="carrusel__movies movies">
+                    <div class="movie__card">
+                        <div class="movies__img-one movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                            
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">Barbie</span>
+                            <span class="title__date">Julio, 2023</span>
+                        </h2>
+                    </div>
+
+                    <div class="movie__card">
+                        <div class="movies__img-two movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                        
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">La Sirenita</span>
+                            <span class="title__date">Mayo, 2023</span>
+                        </h2>
+                    </div>
+
+                    <div class="movie__card">
+                        <div class="movies__img-three movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                        
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">Flash</span>
+                            <span class="title__date">Junio, 2023</span>
+                        </h2>
+                    </div>
+
+                    <div class="movie__card">
+                        <div class="movies__img-four movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                        
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">Oppenheimer</span>
+                            <span class="title__date">Julio, 2023</span>
+                        </h2>
+                    </div>
+
+                    <div class="movie__card">
+                        <div class="movies__img-five movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                        
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">Proyecto Extración</span>
+                            <span class="title__date">Julio, 2023</span>
+                        </h2>
+                    </div>
+
+                    <div class="movie__card">
+                        <div class="movies__img-six movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                        
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">Guardianes de la Galaxia</span>
+                            <span class="title__date">Mayo, 2023</span>
+                        </h2>
+                    </div>
+
+                    <div class="movie__card">
+                        <div class="movies__img-seven movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                        
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">Paradise</span>
+                            <span class="title__date">Junio, 2023</span>
+                        </h2>
+                    </div>
+
+                    <div class="movie__card">
+                        <div class="movies__img-eight movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                        
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">Fast & Furious X</span>
+                            <span class="title__date">Mayo, 2023</span>
+                        </h2>
+                    </div>
+
+                    <div class="movie__card">
+                        <div class="movies__img-nine movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                        
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">John Wick 4</span>
+                            <span class="title__date">Marzo, 2023</span>
+                        </h2>
+                    </div>
+
+                    <div class="movie__card">
+                        <div class="movies__img-ten movie__img play-hover">
+                            <div class="play-hover__bg-dark"></div>
+                        
+                            <div class="play-hover__img-container">
+                                <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                            </div>
+                        </div>
+                        <h2 class="movies__title title">
+                            <span class="title__text">Elemental</span>
+                            <span class="title__date">Junio, 2023</span>
+                        </h2>
+                    </div>
+                   
+                </div>
+                <div class="carrusel__right-arrow">
+                    <a href="#" class="carrusel__anchor">
+                        <img src="assets/icons/right-icon.svg" alt="right">
+                    </a>
+                </div>
+            </section>
+        </section>
+        
+        <section class="online">
+            <h2 class="online__text">Películas Online</h2>
+            <section class="online__movies">
+                <div class="movie__card">
+                    <div class="movies__img-online-one movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">One Piece Film Red</span>
+                        <span class="title__date">Agosto, 2022</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-two movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">San Andrés</span>
+                        <span class="title__date">Mayo, 2015</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-three movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">Tyler Rake 2</span>
+                        <span class="title__date">Junio, 2023</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-four movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">Fresh</span>
+                        <span class="title__date">Marzo, 2022</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-five movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">El pacto</span>
+                        <span class="title__date">Abril, 2023</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-six movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">El Gato con Botas</span>
+                        <span class="title__date">Diciembre, 2022</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-seven movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">Creed III</span>
+                        <span class="title__date">Marzo, 2023</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-eight movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">Scream VI</span>
+                        <span class="title__date">Marzo, 2023</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-nine movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">It</span>
+                        <span class="title__date">Septiembre, 2017</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-ten movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">Top Gun: Maverick</span>
+                        <span class="title__date">Diciembre, 2018</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-eleven movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">Batman</span>
+                        <span class="title__date">Marzo, 2022</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-twelve movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">Operación Kandahar</span>
+                        <span class="title__date">Mayo, 2023</span>
+                    </h2>
+                </div>
+
+                 <div class="movie__card">
+                    <div class="movies__img-online-thirteen movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">Sisu</span>
+                        <span class="title__date">Enero, 2023</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-fourteen movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">El Piloto</span>
+                        <span class="title__date">Enero, 2023</span>
+                    </h2>
+                </div>
+
+                <div class="movie__card">
+                    <div class="movies__img-online-fifteen movie__img play-hover">
+                        <div class="play-hover__bg-dark"></div>
+                        
+                        <div class="play-hover__img-container">
+                            <img src="assets/icons/play-circle.svg" alt="play" class="play-hover__img">
+                        </div>
+                    </div>
+                    <h2 class="movies__title title">
+                        <span class="title__text">Interstellar</span>
+                        <span class="title__date">Noviembre, 2014</span>
+                    </h2>
+                </div>
+            </section>
+        </section>
+
+    </main>
+</body>
+</html>
